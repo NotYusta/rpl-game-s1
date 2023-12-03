@@ -9,13 +9,13 @@ while (ticketPrice !== cPrice) {
 		)
 	);
 
-    if(isNaN(cPrice)) {
-        alert("Harga tiket harus angka!");
-    }
+	if (isNaN(cPrice)) {
+		alert("Harga tiket harus angka!");
+	}
 
-    if(cPrice > 1000) {
-        cPrice = cPrice / 1000;
-    }
+	if (cPrice > 1000) {
+		cPrice = cPrice / 1000;
+	}
 
 	if (ticketPrice > cPrice) {
 		alert(`Harga tiket lebih tinggi dari ${cPrice}`);
@@ -29,8 +29,8 @@ while (ticketPrice !== cPrice) {
 if (ticketPrice === cPrice) {
 	alert("Selamat tebakan harga tiket kamu benar!");
 
-    const playAgain = confirm("Main lagi?");
-    if (playAgain) {
-        location.reload();
-    }
+	const playAgain = confirm("Main lagi?");
+	if (playAgain) {
+		location.reload();
+	}
 }
